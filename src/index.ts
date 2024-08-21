@@ -80,7 +80,7 @@ export const createCache = (options?: CreateCacheOptions) => {
 
       for (; i < stores.length; i++) {
         try {
-          const data = await stores[i].get(key, { raw: true })
+          const data = await stores[i].get<T>(key, { raw: true })
           if (data !== undefined) {
             value = data.value
             if (typeof data.expires === 'number') {

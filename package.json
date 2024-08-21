@@ -40,7 +40,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "keyv": "^4.5.4"
+    "keyv": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
